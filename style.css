@@ -7,3 +7,8 @@
   font-style: normal;
 
 }
+.banner{
+  background-image:linear-gradient(to right, rgba(0, 0, 0, 0.938), rgba(41, 35, 35, 0.5)), url('Assets/banner-image.png');
+  background-size: cover;
+  background-position: center;
+}
