@@ -15,7 +15,7 @@ fetch("https://fakestoreapi.com/products/categories")
     .then(res => res.json())
     .then(categories => {
         const allButton = document.createElement("button");
-        allButton.className = "bg-blue-700 text-white px-3 py-1 rounded-md mr-2 mb-2";
+        allButton.className = "bg-blue-700 text-white px-3 py-1 rounded-md mr-2 mb-2 cursor-pointer";
         allButton.textContent = "All";
 
         allButton.addEventListener("click", () => {
@@ -27,7 +27,7 @@ fetch("https://fakestoreapi.com/products/categories")
 
         categories.forEach(category => {
             const btn = document.createElement("button");
-            btn.className = "bg-gray-300 border-1 px-3 py-1 rounded-md hover:bg-blue-800 transition duration-300 hover:text-gray-100 mr-2 mb-2 capitalize";
+            btn.className = "bg-gray-300 border-1 px-3 py-1 rounded-md hover:bg-blue-800 transition duration-300 hover:text-gray-100 mr-2 mb-2 capitalize cursor-pointer";
             btn.textContent = category;
 
             btn.addEventListener("click", () => {
@@ -70,9 +70,9 @@ function displayProducts(products) {
     productContainer.innerHTML = "";
     products.forEach(product => {
         const card = document.createElement("div");
-        card.className = "bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300";
+        card.className = "bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 cursor-pointer transform hover:-translate-y-1";
         card.innerHTML = `
-      <div class="bg-gray-300 p-4 mb-4">
+      <div class="bg-gray-300 p-4 mb-4 ">
         <img src="${product.image}" alt="${product.title}" class="w-full h-64 mb-4 rounded-md object-contain">
       </div>
       <div class="flex justify-between items-center text-sm px-4 mb-4">

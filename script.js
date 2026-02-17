@@ -9,7 +9,7 @@ fetch (url)
     const card3 = data.slice(0, 3);
     card3.forEach (product => {
         const card = document.createElement("div");
-        card.className = "bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300";
+        card.className = "bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 cursor-pointer transform hover:-translate-y-1";
         card.innerHTML = `
         <div class="bg-gray-300 p-4 mb-4">
             <img src="${product.image}" alt="${product.title}"
