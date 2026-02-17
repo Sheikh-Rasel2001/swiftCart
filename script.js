@@ -33,3 +33,6 @@ fetch (url)
         container.appendChild(card)
     })
 })
+// copyright year
+const year = new Date().getFullYear();
+document.getElementById("year").textContent = year;
