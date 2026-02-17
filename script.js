@@ -30,7 +30,7 @@ fetch (url)
                 class="fa-solid fa-cart-shopping"></i> Add</button>
           </div>
         `
-        container.appendChild(card)
+        container.appendChild(card);
     })
 })
 // copyright year
